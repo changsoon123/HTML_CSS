@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px;
+            text-align: center;
+
+        }
+
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 1.4;
+            padding: 10px;
+        }
+
+        .container{
+            border: 3px solid orange;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        header{
+            border: 3px solid yellow;
+        }
+
+        nav{
+            border: 3px solid purple;
+            width: 150px;
+            height: 200px;
+            float: left;
+        }
+
+        section{
+            border: 3px solid green;
+            width: 500px;
+            float: right;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear:both;
+        }
+
+        footer{
+            border: 3px solid blue;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>float 속성을 이용한 레이아웃</h1>
+
+    <div class="container">
+        <header>
+            <h2>header 영역</h2>
+        </header>
+        <div class="main-content clearfix">
+
+            <nav>
+                <h2>nav 영역</h2>
+            </nav>
+            <section>
+                <h2>섹션 영역</h2>
+                <p>
+                    커피는 독한 향을 좋아하는 사람도 매우 좋아하며 심한 경우 태어나기 전부터 커피를 마신
+                    듯 강한 중독 증세를 보이는 경우가 많다. 심지어 원두를 씹어서 향에 자신을 담그는 사람도
+                    있고 설탕, 시럽 등 다른 조미를 절대로 허락하지 않는 오직 커피맛만을 고집하는 마니아들
+                    이 늘고 있다. 커피는 독한 향을 좋아하는 사람도 매우 좋아하며 심한 경우 태어나기 전부터 커피를 마신
+                    듯 강한 중독 증세를 보이는 경우가 많다. 심지어 원두를 씹어서 향에 자신을 담그는 사람도
+                    있고 설탕, 시럽 등 다른 조미를 절대로 허락하지 않는 오직 커피맛만을 고집하는 마니아들
+                    이 늘고 있다.
+                </p>
+            </section>
+        </div>
+        <footer>footer 영역</footer>
+    </div>
+    
+</body>
+</html>
