@@ -519,8 +519,8 @@ section.sns .sub-container li a .img-box:hover::after
 
 section.sns .sub-container li a .img-box:hover button{
 
-width: 50%;
-height: 20%;
+width: 35%;
+height: 15%;
 background: rgb(202, 101, 18);
     color: rgb(121, 31, 31);
     z-index: 1;
@@ -595,4 +595,389 @@ section.sns .sub-container .bottom .time {
 
 section.sns .sub-container .bottom .time span {
     margin:0px;
+}
+
+/* section.sns ul li .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing:  border-box;
+} */
+
+/* footer style */
+footer{
+    border-top: 1px solid #999;
+    padding: 30px 0;
+}
+
+footer .inner {
+    width: 84%;
+    margin: 0 auto;
+}
+
+footer .inner .ft-logo {
+    float: left;
+    width: 14%;
+}
+
+footer .inner .ft-logo img {
+    width: 100%;
+}
+
+footer .inner .address {
+    float: left;
+    margin-left: 100px;
+    margin-top: 35px;
+
+} 
+
+footer .inner .address li:first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+footer .inner .address li:last-child {
+    color: #999;
+}
+
+footer .inner .list {
+    float: right;
+    margin-top: 20px;
+}
+
+footer .inner .list li {
+    float: left;
+    margin-left: 80px;
+
+}
+
+footer .inner .list li:last-child {
+    font-weight: 700;
+}
+
+footer .inner .list li a:hover {
+    color: #ff8342;
+    text-decoration: underline;
+}
+
+/* 반응형 웹 디자인 */
+/* 노트북 해상도 1600px 미만 */
+
+@media screen and (max-width: 1599px) {
+    header .inner-header nav {
+        display: none;
+    }
+
+    header .inner-header .gnb-mobile {
+        display: block;
+        float: right;
+        font-size:  40px;
+        color: #fff;
+    }
+    section.main .main-title h2 {
+        font-size: 35px;
+    }
+
+    section.main .main-title p {
+        font-size: 18px;
+        
+    }
+    section.main .main-title .view {
+        font-size: 12px;
+        
+        width: 120px;
+
+    }
+    section.innovation .img-box .inner .bottom {
+        padding: 25px 55px;
+        
+    }
+
+    footer .inner .list {
+        /* float: right; */
+        display: none;
+    }
+    section.sns .sub-container li .img-box img {
+        /* width: 100%; */
+        height: 200px;
+        /* transition: 0.6s; */
+    }
+
+    footer .inner .ft-logo img{
+        width: 100%;
+        vertical-align: middle;
+    
+        border: 1px solid #000;
+        border-radius: 15px;
+        opacity: 0.7;
+    }
+    
+}
+/* 태블릿 1024px 이하 해상도(아이패드 프로) */
+@media screen and (max-width: 1024px) {
+    section.sns .sub-container li .img-box img {
+        /* width: 100%; */
+        height: 150px;
+        /* transition: 0.6s; */
+    }
+
+    section.innovation .img-box .inner {
+        /* background: #3a3c4e; */
+        width: 80%;
+        /* color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, 0); */
+    }
+    section.innovation .img-box .inner h3 {
+        
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+
+    section.innovation .img-box .inner .bottom {
+        padding: 15px 30px;
+        font-size: 65%;
+    }
+
+    section.innovation .img-box .inner .bottom a {
+        /* background-color: aqua; */
+        /* display: block; */
+        float: right;
+        padding: 7px 15px;
+        border-radius: 50px;
+        background: #ff8342;
+    }
+
+    section.about ul li a .text p {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    section.about ul li a .text h3 {
+        font-size: 18px;
+        /* margin-bottom: 10px; */
+    }
+
+    section .title h2 {
+        font-size: 36px;
+    }
+
+    section .title p {
+        font-size: 14px;
+    }
+
+    section.me ul.list > li p {
+        
+        font-size: 80%;
+    }
+
+    #incruit-btn {
+        
+        width: 180px;
+        font-size: 80%;
+        
+        padding: 8px 0;
+        
+    }
+
+    footer .inner .address {
+        
+        margin-top: 20px;
+    }
+}
+
+/* 태블릿 768px 이하 해상도 (아이패드 미니) */
+@media screen and (max-width: 768px){
+    
+
+
+}
+
+/* 모바일 414px 이하 해상도  */
+@media screen and (max-width: 414px){
+    header .inner-header {
+        /* background: orange; */
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    header {
+        
+        height: 70px;
+        line-height: 60px;
+        
+    }
+
+    header .inner-header .logo img {
+        width: 50%;
+        
+    }
+
+    .fa-bars{
+        /* width: 5; */
+        font-size: 70%;
+    }
+    section.main .main-title h2 {
+        font-size: 15px;
+    }
+    section.main .main-title p {
+        font-size: 8px;
+    }
+
+    /* section.main .main-title .view .en{
+        font-size: 2px;
+        width: 100px;
+    } */
+
+    section.main .main-title .view {
+        font-size: 5px;
+        letter-spacing: 1px;
+        /* display: block; */
+        width: 100px;
+        /* margin: 0 auto; */
+        border: 1px solid #fff;
+        
+    }
+
+    section .title h2 {
+        font-size: 20px;
+    }
+
+    section .title p {
+        font-size: 8px;
+    }
+
+    section.about .sub-container li {
+        float: left;
+        width: 100%;
+        /* box-sizing: border-box; */
+        height: 310px;
+        margin: 20px 0;
+
+    }
+
+    section.about ul li a .text h3 {
+        font-size: 2px;
+        /* margin-bottom: 10px; */
+    }
+    
+    section.about ul li a .text p.more {
+        text-transform: uppercase;
+        font-weight: 700;
+        /* background: skyblue; */
+        padding-left: 40px;
+        position: relative;
+    }
+
+    section.innovation .img-box {
+        margin-top: 50px;
+        height: 340px;
+        background: url(../img/product_1.jpg) no-repeat center / cover;
+        position: relative;
+    }
+
+    section.innovation .img-box .inner h3 {
+        font-size: 9px;
+        padding: 10px 28px;
+    }
+
+    section.innovation .img-box .inner .bottom p {
+        /* background-color: yellow; */
+        /* float: left; */
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    section.innovation .img-box .inner .bottom a {
+        /* background-color: aqua; */
+        /* display: block; */
+        /* float: right; */
+        padding: 5px 8px;
+        margin-right: 20px;
+        /* border-radius: 50px; */
+        /* background: #ff8342; */
+    }
+
+    section.innovation .img-box .inner .bottom {
+        padding: 5px 10px;
+        font-size: 35%;
+    }
+
+    section.me {
+        /* background: url(../img/me.jpg) no-repeat center / cover; */
+        padding: 20px;
+        /* margin-bottom: 150px; */
+    }
+
+    section.me ul.list > li h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+        /* position: relative; */
+    }
+
+    section.me ul.list > li p {
+        font-size: 50%;
+    }
+
+    section.me ul.list > li {
+        /* border: 4px solid #000; */
+        padding: 10px 20px;
+    }
+
+    section.sns {
+        /* background: orange; */
+        margin: 40px 0;
+    }
+
+    section.sns .sub-container li .img-box img {
+        /* width: 100%; */
+        height: 100px;
+        /* transition: 0.6s; */
+    }
+
+    section.sns .sub-container li {
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+        height: 210px;
+        /* margin-right: 1%; */
+        margin-bottom: 20px;
+    }
+
+    footer .inner {
+        position: relative;
+    }
+
+    footer .inner .address li:first-child {
+        /* font-weight: 700; */
+        /* margin-bottom: 10px; */
+        /* float: right; */
+        /* display: inline-block; */
+        /* box-sizing: border-box; */
+        text-align: center;
+        float: left;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-90%);
+    
+        /* margin: 0 auto; */
+    }
+
+    footer .inner .address li:last-child {
+        margin-top: 20px;
+    }
+
+    footer .inner .ft-logo img {
+        width: 0%;
+        display: none;
+        /* width: 100%; */
+        /* float: left;
+        vertical-align: middle;
+        border: 1px solid #000;
+        border-radius: 15px;
+        opacity: 0.7; */
+    }
 }
